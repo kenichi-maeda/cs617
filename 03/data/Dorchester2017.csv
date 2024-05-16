@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:302d888d06455fb6b4a1c34cc0e345cddf298960fa9a7d639e54dd2a1e8c0b9d
-size 213
+﻿"Month","Inches"
+"January","4.24"
+"February","2.24"
+"March","3.27"
+"April","6.24"
+"May","3.99"
+"June","5.05"
+"July","3.65"
+"August","3.08"
+"September","2.88"
+"October","5.11"
+"November","1.83"
+"December","1.97"

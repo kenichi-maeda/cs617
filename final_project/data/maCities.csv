@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87068088dca658b007e9dfe091dbd2985173509ade7a27f317393c5635deadd0
-size 148
+city,count
+Boston,6.6
+Amherst,2.2
+Lowell,4.12
+Dartmouth,2.84
+Springfield,8.69
+Worcester,6.23
+Lynn,6.58
+Framingham,2.87
+Plyumouth,3.56
+Cambridge,4.12

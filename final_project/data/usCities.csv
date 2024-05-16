@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25bad2b96099bd9b4cd8cf02246a7f4ee8df03503d3bf0933ef7dbf04f85dfaa
-size 149
+city,count
+Boston,6.6
+DC,8.12
+Chicago,5.38
+Seattle,8.19
+New York,8.18
+San Francisco,6.75
+Austin,5.38
+Philadelphia,10.39
+Phoenix,8.28
+Los Angeles,8.38
