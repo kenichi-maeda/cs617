@@ -126,7 +126,6 @@ function initializePlot_numberOfCrimesAssault() {
                 .attr("d", line);
 
             const totalLength = path.node().getTotalLength();
-            console.log(totalLength);
             path.attr("stroke-dasharray", totalLength + " " + totalLength)
                 .attr("stroke-dashoffset", totalLength)
                 .transition()
