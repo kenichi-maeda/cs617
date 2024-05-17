@@ -132,7 +132,7 @@ function initializePlot_numberOfCrimesTotal() {
                 .duration(1100)
                 .attr("stroke-dashoffset", 0)
                 .on("start", () => {
-                    const audio = document.getElementById("pop-sound");
+                    const audio = new Audio("data/pop.mp3");
                     const totalPoints = data.length;
                     const interval = 1000 / totalPoints;
                     let pointIndex = 0;
