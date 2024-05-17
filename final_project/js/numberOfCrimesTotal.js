@@ -130,20 +130,24 @@ function initializePlot_numberOfCrimesTotal() {
                 .attr("stroke-dashoffset", totalLength)
                 .transition()
                 .duration(1100)
-                .attr("stroke-dashoffset", 0);
-    
-            // Play sound at intervals
-            let currentIndex = 0;
-            console.log(data.length)
-            const interval = 900 / data.length;
-            const soundTimer = setInterval(() => {
-                const audio = new Audio("../data/pop.mp3");
-                audio.play();
-                currentIndex++;
-                if (currentIndex >= data.length) {
-                    clearInterval(soundTimer);
-                }
-            }, interval);
+                .attr("stroke-dashoffset", 0)
+                .on("start", () => {
+                    const audio = document.getElementById("pop-sound");
+                    const totalPoints = data.length;
+                    const interval = 1000 / totalPoints;
+                    let pointIndex = 0;
+        
+                    const playSoundAtPoints = () => {
+                        if (pointIndex < totalPoints) {
+                            const clone = audio.cloneNode();
+                            clone.play();
+                            pointIndex++;
+                        }
+                    };
+        
+                    const intervalId = setInterval(playSoundAtPoints, interval);
+                    setTimeout(() => clearInterval(intervalId), 1000);
+                });
         }
     });
 
